@@ -28,7 +28,7 @@ auth_start();
           <img src="images/LOGO TITIP.png" alt="Logo TITIP" class="logo" />
         </div>
         <div class="navbar-nav">
-          <a href="#home">Home</a><a href="#layanan">Layanan</a><a href="#about">Tentang Kami</a><a href="#gabung-mitra">Gabung Mitra</a><a href="mitra-titip.php">Mitra</a><a href="#contact">Kontak</a>
+          <a href="#home">Asu</a><a href="#layanan">Layanan</a><a href="#about">Tentang Kami</a><a href="#gabung-mitra">Gabung Mitra</a><a href="mitra-titip.php">Mitra</a><a href="#contact">Kontak</a>
         </div>
         <div class="navbar-extra">
           <?php if (auth_check()): ?>
