@@ -1,0 +1,73 @@
+/* style.css */
+
+:root {
+    --primary-color: #007bff;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --bg-color: #f8f9fa; /* Latar belakang terang */
+    --card-bg-color: #ffffff; /* Latar belakang kartu putih */
+    --text-color: #212529;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+}
+
+/* Penyesuaian Konten Utama (Tidak perlu margin-left karena menggunakan Offcanvas) */
+.main-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Statistik Card */
+.stats-card {
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    color: #ffffff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px); /* Efek melayang saat dihover */
+}
+
+.stats-card h5 {
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.stats-card p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    opacity: 0.8;
+}
+
+/* Warna-warna spesifik untuk statistik */
+.bg-primary-stats { background-color: var(--primary-color) !important; }
+.bg-success-stats { background-color: var(--success-color) !important; }
+.bg-warning-stats { background-color: #fd7e14 !important; } /* Oranye tua */
+.bg-danger-stats { background-color: var(--danger-color) !important; }
+
+/* Styling Tabel dan Aktivitas */
+.card-aktivitas {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    background-color: var(--card-bg-color);
+}
+
+/* Badge status */
+.badge-status-selesai { background-color: var(--success-color); }
+.badge-status-proses { background-color: var(--primary-color); }
+.badge-status-tertunda { background-color: var(--danger-color); }

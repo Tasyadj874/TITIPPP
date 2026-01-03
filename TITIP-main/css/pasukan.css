@@ -1,0 +1,191 @@
+:root {
+  --primary: #ff0000;
+  --bg: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg);
+  color: #000000;
+}
+
+/* Navbar Logo*/
+.white-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9998;
+  height: 6rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Section */
+.logo-container {
+  position: absolute;
+  top: 1rem; /* Jarak dari atas */
+  left: 1rem; /* Jarak dari kiri */
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 12rem; /* Ukuran logo */
+  height: auto;
+}
+
+/* Navbar Menu*/
+
+/* Navbar Merah */
+.red-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15rem; /* Memberi jarak antara logo dan navbar */
+  margin-top: 1rem;
+  padding: 0.3rem 7%;
+  background-color: rgba(255, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  border-radius: 3rem 0 0 3rem; /* Membuat lekukan navbar */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0 2.5rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav a:hover {
+  color: #ffdddd;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--bg);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: #ffdddd;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Container */
+.container {
+  margin: 20px;
+}
+
+.container h1 {
+  font-size: 28px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"],
+.form-group input[type="date"],
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
+
+.btn.cancel {
+  background-color: #dc3545;
+}
+
+.btn.cancel:hover {
+  background-color: #c82333;
+}
+
+.btn-selesai {
+  background-color: #28a745;
+  margin-top: 20px;
+}
+
+/* Warna merah saat menyimpan */
+.btn.saving {
+  background-color: #dc3545 !important;
+}

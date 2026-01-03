@@ -1,0 +1,496 @@
+/* Simpan sebagai /css/login.css */
+
+:root {
+
+  --primary: #ff0000;
+
+  --bg: #ffffff;
+
+}
+
+
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  outline: none;
+
+  border: none;
+
+  text-decoration: none;
+
+}
+
+
+
+body {
+
+  font-family: "Roboto", sans-serif;
+
+  background-color: var(--bg);
+
+  color: #000000;
+
+}
+
+
+
+/* --- Bagian Navbar (Dibutuhkan) --- */
+
+.white-navbar {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 1.4rem 7%;
+
+  background-color: #ffffff;
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  right: 0;
+
+  z-index: 9998;
+
+  height: 6rem;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.logo-container {
+
+  position: absolute;
+
+  top: 1rem;
+
+  left: 1rem;
+
+  display: flex;
+
+  align-items: center;
+
+}
+
+
+
+.logo {
+
+  width: 12rem;
+
+  height: auto;
+
+}
+
+
+
+.red-navbar {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-left: 15rem;
+
+  margin-top: 0.5rem;
+
+  padding: 0.3rem 7%;
+
+  background-color: rgba(255, 0, 0, 0.8);
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  right: 0;
+
+  z-index: 9999;
+
+  border-radius: 3rem 0 0 3rem;
+
+}
+
+
+
+.navbar {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  width: 100%;
+
+}
+
+
+
+.navbar-nav {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+
+}
+
+
+
+.navbar-nav a {
+
+  color: #fff;
+
+  display: inline-flex;
+
+  font-size: 1.3rem;
+
+  font-weight: bold;
+
+  margin: 0 2.5rem;
+
+}
+
+
+
+.navbar-nav a:hover {
+
+  color: #ffdddd;
+
+}
+
+
+
+/* --- Bagian Login (Dibutuhkan) --- */
+
+.login {
+
+  background-color: #ffcccc;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  height: 100vh; /* Pastikan tinggi 100vh agar bisa di tengah */
+
+  margin: 0;
+
+}
+
+
+
+.login .container {
+
+  background-color: #ffffff;
+
+  border-radius: 10px;
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+  padding: 2rem;
+
+  width: 350px;
+
+  text-align: center;
+
+  transition: transform 0.2s;
+
+  /* Tambahkan ini agar tidak tertutup navbar */
+
+  margin-top: 6rem; 
+
+}
+
+
+
+.login .container:hover {
+
+  transform: translateY(-5px);
+
+}
+
+
+
+.login .container h1 {
+
+  color: #ff0000;
+
+  margin-top: 1rem;
+
+  margin-bottom: 3rem;
+
+  font-size: 2.5rem; /* Pastikan font-size ada (dari style.css asli) */
+
+  font-weight: 900; /* (dari style.css asli) */
+
+}
+
+
+
+/* Style form dari style.css Anda */
+
+.login .form-group {
+
+  margin-bottom: 1.5rem; /* Disesuaikan dari 1rem */
+
+  text-align: left;
+
+}
+
+
+
+.login label {
+
+  font-weight: bold;
+
+  margin-bottom: 0.5rem;
+
+  display: block;
+
+  font-size: 1.6rem; /* Disesuaikan dari style.css Anda */
+
+}
+
+
+
+.login input {
+
+  width: 100%;
+
+  padding: 0.75rem;
+
+  border: 1px solid #ccc;
+
+  border-radius: 5px;
+
+  font-size: 1.4rem; /* Disesuaikan */
+
+  transition: border-color 0.3s;
+
+}
+
+
+
+.login input:focus {
+
+  border-color: #ff0000;
+
+  outline: none;
+
+}
+
+
+
+.login button {
+
+  background-color: #ff0000;
+
+  color: #ffffff;
+
+  border: none;
+
+  padding: 0.75rem;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  width: 100%;
+
+  font-size: 1.6rem; /* Disesuaikan */
+
+  transition: background-color 0.3s, transform 0.2s;
+
+  font-weight: bold; /* (dari style.css asli) */
+
+}
+
+
+
+.login button:hover {
+
+  background-color: #e60000;
+
+  transform: scale(1.05);
+
+}
+
+
+
+/* --- Media Queries (Hanya untuk navbar, jika diperlukan) --- */
+
+@media (max-width: 768px) {
+
+  html {
+
+    font-size: 62.5%;
+
+  }
+
+  .red-navbar {
+
+    margin-left: 0;
+
+    border-radius: 0;
+
+  }
+
+  .login .container {
+
+    width: 90%;
+
+    margin-top: 8rem;
+
+    padding: 2rem;
+
+  }
+
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: radial-gradient(1200px circle at 10% 10%, #ffe5e5 0%, rgba(255, 229, 229, 0) 55%),
+    radial-gradient(900px circle at 90% 20%, #fff1f1 0%, rgba(255, 241, 241, 0) 60%),
+    var(--bg);
+}
+
+.login-box {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  padding: 2.2rem 2rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.login-box h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #111;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.login-box form {
+  display: grid;
+  gap: 1rem;
+}
+
+.login-box input,
+.login-box select {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  font-size: 1.05rem;
+  background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-box input:focus,
+.login-box select:focus {
+  border-color: rgba(255, 0, 0, 0.6);
+  box-shadow: 0 0 0 4px rgba(255, 0, 0, 0.12);
+}
+
+.login-box button {
+  margin-top: 0.25rem;
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border-radius: 999px;
+  font-size: 1.05rem;
+  font-weight: 800;
+  background: var(--primary);
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.login-box button:hover {
+  background: #e60000;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 18px rgba(255, 0, 0, 0.18);
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.field > span {
+  font-size: 0.95rem;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+}
+
+.alert {
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  margin: 0 0 1rem;
+  font-size: 0.98rem;
+  border: 1px solid transparent;
+}
+
+.alert-success {
+  background: #ecfdf3;
+  color: #0f5132;
+  border-color: rgba(15, 81, 50, 0.16);
+}
+
+.alert-error {
+  background: #fff1f2;
+  color: #7f1d1d;
+  border-color: rgba(127, 29, 29, 0.18);
+}
+
+.login-footer {
+  margin-top: 1.25rem;
+  text-align: center;
+  font-size: 0.98rem;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.login-footer a {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 1.25rem;
+  }
+
+  .login-box {
+    padding: 1.8rem 1.4rem;
+  }
+}
